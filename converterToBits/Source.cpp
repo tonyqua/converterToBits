@@ -24,13 +24,13 @@ int main()
 	int x;
 	std::cin >> x;
 	int bits[] = { 128, 64, 32, 16, 8, 4, 2, 1 };
-
+	//Первая часть обрабатывает значения 128, 64, 32 и 16
 	for (int i = 0; i < 4; ++i) {
 		x = printAndDecrementBit(x, bits[i]);
 	}
 
 	std::cout << " ";
-
+	//Вторая часть обрабатывает значения 8, 4, 2 и 1.
 	for (int i = 4; i < 8; ++i) {
 		x = printAndDecrementBit(x, bits[i]);
 	}
